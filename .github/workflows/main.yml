@@ -15,7 +15,7 @@ jobs:
         node-version: 18
     - name: Install dependencies
       env:
-        Riyaz: ${secrets.Riyaz}
+        Riyaz: ${{ secrets.Riyaz}}
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
