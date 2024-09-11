@@ -1,4 +1,4 @@
-package Utils;
+/*package Utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +16,7 @@ public class TestBase {
             driver.manage().window().maximize();
             driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
         }
+
         return driver;
     }
-
-}
+*/

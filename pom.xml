@@ -43,7 +43,32 @@
             <artifactId>cucumber-picocontainer</artifactId>
             <version>7.18.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.9</version> <!-- Check for the latest version -->
+        </dependency>
 
-    </dependencies>
+
+            <!-- Spring Core (includes @Autowired) -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>5.3.30</version> <!-- Use the latest version available -->
+            </dependency>
+
+            <!-- Spring Beans (Bean management, part of Spring Context) -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>5.3.30</version>
+            </dependency>
+
+            <!-- Other dependencies for your project -->
+
+
+
+
+    </dependencies><build><plugins><plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><configuration><source>8</source><target>8</target><compilerArgs>--enable-preview</compilerArgs></configuration></plugin></plugins></build>
 
 </project>

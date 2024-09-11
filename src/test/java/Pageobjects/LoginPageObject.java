@@ -2,6 +2,7 @@ package Pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.springframework.beans.factory.annotation.Value;
 
 public class LoginPageObject {
     WebDriver driver;
@@ -10,11 +11,13 @@ public class LoginPageObject {
         this.driver=driver;
     }
 
-    By search=By.xpath("//input[@type='search']");
+
     By productName=By.xpath("//h4[text()='Tomato - 1 Kg']");
     By topDeals=By.xpath("//a[text()='Top Deals']");
+    By search=By.xpath("//input[@type='search']");
     public void searchItem(String shortname)
     {
+
         driver.findElement(search).sendKeys(shortname);
     }
     public void getText()

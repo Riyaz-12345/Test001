@@ -9,7 +9,7 @@ public class OfferPageObject {
     {
 
         this.driver=driver;
-    }
+    }                                             
     By search=By.xpath("//input[@type='search']");
     By product=By.xpath("//td[text()='Tomato']");
     public void searchProduct1()

@@ -34,7 +34,7 @@ public class MainSteps {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("success massage should be displayed");
     }
-    @Given("user databse configuration")
+    @Given("user database configuration")
     public void user_databse_configuration() {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("user credentials in database");
