@@ -3,13 +3,13 @@ class Dashboard
     constructor(page)
     {
         this.products=page.locator(".card-body");
-        this.productText=page.locator(".card-body b");
+        //this.productText=page.locator(".card-body b");
         this.cart=page.locator("[routerlink*='cart']");
 
     }
    async searchProductAddCart(productName)
    {
-    await this.productText.first().waitFor();
+    //await this.productText.first().waitFor();
     const titles = await this.productText.allTextContents();
     console.log(titles);
     const count = await this.products.count();

@@ -10,6 +10,7 @@ test('@logiandOrder', async ({ page }) => {
     await loginPage.goToUrl();
     await loginPage.validLogin(dataset.email,dataset.passWord);
     await page.waitForLoadState('networkidle'); 
+    await page.locator(".card-body b").first().waitFor();
     const dashboard=new Dashboard(page);
     await dashboard.searchProductAddCart(dataset.productName);
     await dashboard.navigateToCart();
