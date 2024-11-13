@@ -3,7 +3,7 @@ const {Dashboard}=require('./PageObject/Dashboard');
 const dataset=require("./Utils/TestData.json");
 const { test, expect } = require('@playwright/test');
 
-test.only('@logiandOrder', async ({ page }) => {
+test('@logiandOrder', async ({ page }) => {
     //js file- Login js, DashboardPage
     const products = page.locator(".card-body");
     const loginPage=new LoginPage(page);
