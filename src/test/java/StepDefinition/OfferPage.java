@@ -19,7 +19,7 @@ public class OfferPage {
     String productName2;
     TestContextSetup testContextSetup;
     @Then("user search with the same name in cart and extracted same name of the product")
-    public void user_search_with_the_same_name_in_cart_and_extracted_same_name_of_the_product() throws InterruptedException {
+    public void  user_search_with_the_same_name_in_cart_and_extracted_same_name_of_the_product() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
 
         Set<String> windows =this.testContextSetup.driver.getWindowHandles(); //[parentid,childid,subchildId]

@@ -16,7 +16,7 @@ public class PageObjectManager {
         return loginPageObject;
 
     }
-    public OfferPageObject offerPage()
+     public OfferPageObject offerPage()
     {
         offerpageObject=new OfferPageObject(driver);
         return offerpageObject;
