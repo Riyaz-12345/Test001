@@ -20,7 +20,4 @@ test('AI-Web Automation', async ({page}) => {
     await expect ( page.locator("//div[.='Products']")).toHaveText('Products')
     await ai('Click on "Oprn Menu"', aiArgs)
     await ai('Click on Logout', aiArgs)
-
-    await page.pause()
-
 })
