@@ -11,7 +11,7 @@ test('Web Automation', async ({page}) => {
     await page.locator('#logout_sidebar_link').click()
 })
 
-test.only('AI-Web Automation', async ({page}) => {
+test('AI-Web Automation', async ({page}) => {
     const aiArgs = {page, test}
     await page.goto('https://www.saucedemo.com/v1/')
     await ai('Enter Username as "standard_user"', aiArgs)
