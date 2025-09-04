@@ -8,8 +8,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.52.0",
+    "@playwright/test": "^1.55.0",
     "@types/node": "^22.15.30",
     "@zerostep/playwright": "^0.1.5"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
   }
 }
