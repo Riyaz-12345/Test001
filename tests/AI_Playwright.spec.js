@@ -48,7 +48,7 @@ test('Searching the product in Amazon by AI', async ({page}) => {
     await expect(page).toHaveURL("https://github.com/search?q=playwright&type=repositories");
 });
 
-test.only('Submitting the form', async ({ page }) => {
+test('Submitting the form', async ({ page }) => {
     const aiArgs = { page, test };
     await page.goto(' https://demoqa.com/');
     await ai('scroll down', aiArgs)
